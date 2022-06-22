@@ -115,7 +115,7 @@ sudo systemctl start minima_9001 - Minima hizmetini başlatın
 ```
 
 
-### Interacting with Minima
+### Minima ile etkileşim 
 
 
 ```
