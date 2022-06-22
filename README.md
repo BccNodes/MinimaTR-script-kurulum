@@ -72,64 +72,69 @@ ctrl-c
 >Minima loglarından çıkar (Minima arka planda çalışmaya devam eder)
 
 ```
-journalctl -u minima_9001 -f : Minima günlüklerini göster
+journalctl -u minima_9001 -f 
 ```
+>Minima günlüklerini göster
 
 ```
-sudo ps -fC java : Çalışan tüm Java işlemlerini gösterir
+sudo ps -fC java 
 ```
+>Çalışan tüm Java işlemlerini gösterir
 
 ```
-sudo apt install curl : minima ile etkileşim kurmak için curl komutlarını kullanmanıza izin verir
+sudo apt install curl  
 ```
+>minima ile etkileşim kurmak için curl komutlarını kullanmanıza izin verir
+
 
 ```
-Then y (for Yes)
+sudo apt install jq 
 ```
+>çıktının okunabilir görünmesini sağlamak için jq kullanmanıza izin verir
+
+
+
+### Stopping/starting Minima (Servis minima.service olarak adlandırılmalıdır)
+
 
 ```
-sudo apt install jq : allows you to use jq to make the output look readable
+sudo systemctl stop minima_9001 
 ```
-
- ```
-Then y (for Yes)
-```
+>Minima hizmetini durdur
 
 ```
-Stopping/starting Minima (Servis minima.service olarak adlandırılmalıdır)
+sudo systemctl disable minima_9001 
 ```
+>Minima hizmetini devre dışı bırakın
 
 ```
-sudo systemctl stop minima_9001 - Minima hizmetini durdur
+sudo systemctl enable minima_9001 
 ```
+>Minima hizmetini etkinleştirin
 
 ```
-sudo systemctl disable minima_9001 - Minima hizmetini devre dışı bırakın
+sudo systemctl start minima_9001 
 ```
-
-```
-sudo systemctl enable minima_9001 - Minima hizmetini etkinleştirin
-```
-
-```
-sudo systemctl start minima_9001 - Minima hizmetini başlatın
-```
+>Minima hizmetini başlatın
 
 
 ### Minima ile etkileşim 
 
 
 ```
-curl 127.0.0.1:9002/status | jq - Minima'nın durumunu gösterir
+curl 127.0.0.1:9002/status | jq 
 ```
+> Minima'nın durumunu gösterir
 
 ```
-curl 127.0.0.1:9002/incentivecash | jq - teşvik nakit bakiyenizi gösterir
+curl 127.0.0.1:9002/incentivecash | jq 
 ```
+>teşvik nakit bakiyenizi gösterir
 
 ```
-curl 127.0.0.1:9002/help | jq - komutların tam listesini gösterir
+curl 127.0.0.1:9002/help | jq 
 ```
+>komutların tam listesini gösterir
 
 ###Forumda yazmış olduğum flood: https://forum.rues.info/index.php?threads/minima-node-kurulumu-oeduellue.399/
 > Sormak istediğiniz bir şey varsa yazının başında bulunan telegram simgesine tıklayarak bana ulaşabilirsiniz
