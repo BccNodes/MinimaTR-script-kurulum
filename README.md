@@ -64,4 +64,70 @@ curl 127.0.0.1:9002/incentivecash+uid: XXXXXXXXXXX
 
 ![image](https://user-images.githubusercontent.com/101149671/171996301-497a15bf-64bb-404b-a19f-e79d50752f41.png)
 
+## Faydalı komutlar
+
+```
+ctrl-c : Exits the Minima logs (Minima will continue to run in the background)
+```
+
+```
+journalctl -u minima_9001 -f : Show the Minima logs
+```
+
+```
+sudo ps -fC java : Shows all running Java processes
+```
+
+```
+sudo apt install curl : allows you to use curl commands to interact with minima
+```
+
+```
+Then y (for Yes)
+```
+
+```
+sudo apt install jq : allows you to use jq to make the output look readable
+```
+
+ ```
+Then y (for Yes)
+```
+
+```
+Stopping/starting Minima (Service must be called minima.service)
+```
+
+```
+sudo systemctl stop minima_9001 - Stop the Minima service
+```
+
+```
+sudo systemctl disable minima_9001 - Disable the Minima service
+```
+
+```
+sudo systemctl enable minima_9001 - Enable the Minima service
+```
+
+```
+sudo systemctl start minima_9001 - Start the Minima service
+```
+
+```
+Interacting with Minima
+```
+
+```
+curl 127.0.0.1:9002/status | jq - shows the status of Minima
+```
+
+```
+curl 127.0.0.1:9002/incentivecash | jq - shows your incentive cash balance
+```
+
+```
+curl 127.0.0.1:9002/help | jq - shows the full list of commands
+```
+
 Forumda yazmış olduğum flood: https://forum.rues.info/index.php?threads/minima-node-kurulumu-oeduellue.399/
