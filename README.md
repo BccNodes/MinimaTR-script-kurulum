@@ -67,8 +67,9 @@ curl 127.0.0.1:9002/incentivecash+uid: XXXXXXXXXXX
 ## Faydalı komutlar
 
 ```
-ctrl-c : Minima loglarından çıkar (Minima arka planda çalışmaya devam eder)
+ctrl-c 
 ```
+>Minima loglarından çıkar (Minima arka planda çalışmaya devam eder)
 
 ```
 journalctl -u minima_9001 -f : Minima günlüklerini göster
