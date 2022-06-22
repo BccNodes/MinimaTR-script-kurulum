@@ -10,7 +10,7 @@
 
 ![image](https://user-images.githubusercontent.com/101149671/171995425-5f951569-3312-42c9-a43e-7a6f39941d04.png)
 
-# Name kısmına istediğiniz bir isim yazıyorsunuz ve aşağıdan ubuntu seçiyorsunuz.
+# Name kısmına istediğiniz bir isim yazıyorsunuz ve aşağıdan ubuntu (20.04) seçiyorsunuz.
 
 ![image](https://user-images.githubusercontent.com/101149671/171995434-dd6b4c9a-ff77-43a7-8ae7-b0cb367fb311.png)
 
