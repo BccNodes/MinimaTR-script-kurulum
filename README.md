@@ -57,4 +57,4 @@ curl 127.0.0.1:9002/incentivecash+uid: XXXXXXXXXXX
 
 ![image](https://user-images.githubusercontent.com/101149671/171996301-497a15bf-64bb-404b-a19f-e79d50752f41.png)
 
-İşlemler bu kadar, forum'da Minima hakkında konu başlığımız: https://forum.rues.info/index.php?threads/minima-node-kurulumu-oeduellue.399/
+Forumda yazmış olduğum flood: https://forum.rues.info/index.php?threads/minima-node-kurulumu-oeduellue.399/
