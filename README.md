@@ -94,7 +94,7 @@ sudo apt install jq
 
 
 
-### Stopping/starting Minima (Servis minima.service olarak adlandırılmalıdır)
+### Durdurma/Başlatma Minima (Servis minima.service olarak adlandırılmalıdır)
 
 
 ```
