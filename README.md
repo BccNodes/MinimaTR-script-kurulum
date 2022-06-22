@@ -1,0 +1,1 @@
+# MinimaTR-script-kurulum
